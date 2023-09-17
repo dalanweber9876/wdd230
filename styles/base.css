@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+h3 {
+    background-color: #8CADA7;
+    padding: 1%;
+    margin-top: -.05%;
+}
+
+header {
+    background-color: #8CADA7;
+    width: 100%;
+    display: inline-flex;
+    margin: auto;
+}
+
+nav {
+    background-color: #110B11;
+    color: white;
+    height: 100%;
+    
+}
+
+li {
+    
+    text-align: center;
+    padding: 10px;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    width: 96%;
+    margin: auto;
+}
+
+body {
+    font-family: 'Mooli', sans-serif;
+}
+
+.profilepic {
+    width: 15%;
+    padding: 2%;
+    display: block;
+    margin-left: 30%;
+    margin-right: 2%;
+}
+
+#profilename {
+    display: block;
+    margin-left: 2%;
+    margin-right: 25%;
+    margin-top: auto;
+    margin-bottom: auto;
+} 
+
+.navigationbar {
+    margin-top: -1%;
+    margin-bottom: -1%;
+    padding: 1%;
+    list-style-type: none;
+}
+
+.classtitle {
+    margin-top: 3%;
+    margin-bottom: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-bottom: 1px solid grey;
+
+}
+
+.card {
+    grid-template-columns: auto;
+    border: 2px solid grey;
+    border-left: 2px solid grey;
+    border-right: 2px solid grey;
+    border-bottom: 2px solid grey;
+    margin-top: 1.5%;
+}
+
+footer {
+    background-color: #8CADA7;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: .1%;
+    margin-top: 1%;
+}

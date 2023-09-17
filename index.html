@@ -1,10 +1,72 @@
 <!DOCTYPE html>
-<html lang="en-US"></html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<html>
-    <body>
-        <h1>Hello World</h1>
-        <p>I'm hosted with GitHub Pages.</p>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalan Weber - WDD 230 - Web Frontend Development</title>
+    <meta name="author" content="Dalan Weber" />
+    <meta name="description" content="This is the homepage for WDD 230 - Web Frontend Development made by Dalan Weber. It will serve as a course assignment portal." />
+    <link rel="stylesheet" href = "styles/base.css">
+</head>
+
+<body>
+    <header>
+        <img class = "profilepic" src = "images/profilepic.jpg" alt = "profile picture">
+        <h1 id = "profilename">Dalan Weber</h1>
+    </header>
+
+    <nav> 
+        <ul class = "navigationbar">
+            <li> <a href = "#">Home</a> </li>
+            <li> <a href = "chamber/siteplan.html">Site Plan</a> </li>
+            <li> <a href = "chamber/">Chamber</a> </li>
+            <li> <a href = "https://www.byui.edu/" target = "_blank">BYU-Idaho</a> </li>
+            <li> <a id = "favscripture" href = "https://www.churchofjesuschrist.org/study/scriptures/nt/john/16.33?lang=eng#p33" target = "_blank">Scripture</a> </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class = "classtitle">WDD 230: Web Frontend Development</h2>
+
+        <section class = "card">
+            <h3>Learning Activities</h3>
+            <ol>
+                <li><a href = ""></a></li>
+                <li><a href = ""></a></li>
+                <li><a href = ""></a></li>
+                <li><a href = ""></a></li>
+                <li><a href = ""></a></li>
+                <li><a href = ""></a></li>
+                <li><a href = ""></a></li>
+                <li><a href = ""></a></li>
+                <li><a href = ""></a></li>
+                <li><a href = ""></a></li>
+            </ol>
+        </section>
+
+        <section class = "card">
+            <h3>Information</h3>
+            <h4>Idaho, USA</h4>
+            <h4>Weather</h4>   
+            <h4>Number of Visits</h4>
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- <p>
+            <h4 class = "currentYear">Current Year</h4>
+            <h4>Dalan Weber</h4>
+            <h4>Idaho, USA</h4>
+        </p> -->
+        <p>
+            <span class = "currentYear"></span><br>
+            Dalan Weber<br>
+            Idaho, USA
+        </p>
+
+        <p id = "last-modified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
 </html>
