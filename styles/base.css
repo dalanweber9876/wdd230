@@ -20,6 +20,11 @@ nav {
     
 }
 
+nav a:hover {
+    padding: 1rem;
+    border: 1px solid white;
+}
+
 li {
     text-align: center;
     padding: 10px;
@@ -81,7 +86,6 @@ body {
     border-right: 2px solid grey;
     border-bottom: 2px solid grey;
     margin-top: 1.5%;
-    
 }
 
 footer {
