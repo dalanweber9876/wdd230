@@ -63,12 +63,12 @@ body {
     margin-bottom: auto;
 } 
 
-.navigationbar {
+/* .navigationbar {
     margin-top: -1%;
     margin-bottom: -1%;
     padding: 1%;
     list-style-type: none;
-}
+} */
 
 .classtitle {
     margin-top: 3%;
@@ -105,3 +105,66 @@ a:link.projects, a:visited.projects{
 .leftalign {
     text-align: left;
 }
+
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+	left: 92%;
+	top: 2%;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+.navigationbar {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+.navigationbar li {
+	display: none;
+}
+.navigationbar li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigationbar li a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+    width: auto;
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.open li {
+	display: block;
+	width: 88%;
+}
+.open li a {
+	display: block;
+}
+
+::marker {
+    color: #8CADA7;
+    font-size: 23px;
+  }
+
+  iframe {
+    padding-top: 10px;
+    grid-column: 1/2;
+    width: 100%;
+
+  }

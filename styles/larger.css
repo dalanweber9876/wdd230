@@ -3,7 +3,7 @@
     
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto auto;
     }
 
     #section1 {
@@ -25,4 +25,24 @@
         
         justify-content: space-around;
     }
+
+    #menu {
+		display: none;
+	}
+
+    .navigationbar {
+        margin-top: -1%;
+        margin-bottom: -1%;
+        padding: 1%;
+        list-style-type: none;
+    }
+
+    .navigationbar li {
+        display: block;
+    }
+
+    iframe {
+        padding-top: 10px;
+        grid-column: 1/3;
+      }
 }
