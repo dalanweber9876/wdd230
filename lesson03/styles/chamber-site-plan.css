@@ -12,3 +12,11 @@ body {
 .desktop {
     width: 75%;
 }
+
+h1 {
+    background-color: #40798c;
+}
+
+h2 {
+    background-color: #70a9a1;
+}
