@@ -1,0 +1,52 @@
+@media screen and (min-width:1000px){
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .currentevents {
+        grid-column: 1 / 2;
+        text-align: center;
+        border: 1px solid black;
+        background-color: #c2c2c2;
+        
+    }
+    
+    .calltoaction {
+        grid-column: 2/3;
+        margin: 10%;
+        padding: 10px;
+        border: 1px solid black;
+        margin-bottom: 20%;
+        background-color: #70A9A1;
+        
+    }
+    
+    .weathercard {
+        grid-column: 3 / 4;
+        text-align: center;
+        border: 1px solid black;
+        background-color: #c2c2c2;
+    }
+    
+    .companyads {
+        grid-column: 2 / 3;
+        text-align: center;
+        border: 1px solid black;
+        margin: -13%;
+        margin-bottom: 13%;
+        background-color: #40798C;
+    }
+
+    #menu {
+        display: none; /* hide hamburger button */
+    }
+
+    .navigationbar {
+        display: inline-flex;
+        list-style-type: none;
+        text-align: left;
+        margin-left: 50px;
+        }
+}
