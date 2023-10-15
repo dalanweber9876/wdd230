@@ -32,10 +32,24 @@
                 <li><a href="#">Join</a></li>
             </ul>
         </nav>
+        <div class="darkmode">
+            <label class="switch">
+                <input type="checkbox" id="myCheck" onclick="myFunction()">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        
+
     </header>
     
     <main>
-        <img class="heroimg" src="images/heroimg.png" alt="Sky view picture of Rexburg">
+        <div class="container">
+            <img class="heroimg" src="images/heroimg.png" alt="Sky view picture of Rexburg">
+            <div class="buttoncontainer">
+                <button class="btn"> Join the Chamber!</button>
+            </div>
+            
+        </div>
         
 
         <section class="currentevents">
@@ -52,9 +66,7 @@
                 <li>Phone Number:</li>
                 <li>Email:</li>
             </ul>
-            <div class="actionbutton">
-                <button > Join the Chamber!</button>
-            </div>
+            <button class="formbutton"> Join the Chamber!</button>
         </section>
         
 
@@ -77,7 +89,6 @@
         <section>
             <div class="imgandtitle">
                 <img class="headerimg" src="images/logo.png" alt="Rexburg Chamber of Commerce Logo">
-                <p><br>Rexburg Chamber <br>of Commerce</p>
             </div>
 
             <div class="contactus">
@@ -97,5 +108,6 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
 </body>
 </html>

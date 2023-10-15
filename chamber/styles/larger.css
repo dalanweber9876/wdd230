@@ -49,4 +49,9 @@
         text-align: left;
         margin-left: 50px;
         }
+
+    .darkmode {
+        right: 1%;
+        top: 3%;
+    }
 }
