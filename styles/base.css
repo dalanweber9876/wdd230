@@ -162,11 +162,40 @@ a:link.projects, a:visited.projects{
 ::marker {
     color: #8CADA7;
     font-size: 23px;
-  }
+}
 
-  iframe {
+iframe {
     padding-top: 10px;
     grid-column: 1/2;
     width: 100%;
 
-  }
+}
+
+.hero {
+    position: relative;
+    grid-column: 1/2
+}
+
+#heroimg {
+    width: 100%;
+    height: auto;
+}
+
+.label {
+    position: absolute;
+    left: 3%;
+	top: 15%;
+    background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+
+.label p {
+    margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: .8rem;
+	font-family: serif;
+}
