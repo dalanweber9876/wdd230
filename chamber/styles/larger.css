@@ -54,4 +54,12 @@
         right: 1%;
         top: 3%;
     }
+
+    .label p::before {
+        content: "Large";
+    }
+
+    .label p {
+        font-size: 2rem;
+    }
 }

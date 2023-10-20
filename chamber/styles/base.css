@@ -7,8 +7,9 @@ header {
 }
 
 header:first-child .headerimg {
-    width: 200px;
-    height: 200px;
+    /* width: 200px;
+    height: 200px; */
+    
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 5%;
@@ -269,3 +270,25 @@ main ul {
     right: 10%;
     top: 3%;
   }
+
+  .label p::before {
+    content: "Small";
+}
+
+.label {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,.75);
+    padding: 1rem;
+    
+}
+
+.label p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: serif;
+}

@@ -20,7 +20,7 @@
 
 <body>
     <header>
-        <img class="headerimg" src="images/logo.png" alt="Rexburg Chamber of Commerce Logo">
+        <img class="headerimg" src="images/logo.webp" alt="Rexburg Chamber of Commerce Logo">
         <h1>Rexburg Chamber of Commerce</h1>
 
         <button id="menu"></button>
@@ -44,10 +44,20 @@
     
     <main>
         <div class="container">
-            <img class="heroimg" src="images/heroimg.png" alt="Sky view picture of Rexburg">
-            <div class="buttoncontainer">
-                <button class="btn"> Join the Chamber!</button>
+            <!-- <img class="heroimg" src="images/heroimg.webp" alt="Sky view picture of Rexburg"> -->
+            <div class="hero">
+                <div class="label">
+                    <p></p>
+                </div>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/temp-hero-small.webp">
+                    <source media="(max-width: 1000px)" srcset="images/temp-hero-medium.webp">
+                    <img src="images/temp-hero-large.webp" alt="Meeting of three people" width="1280" height="640">
+                </picture>
             </div>
+            <!-- <div class="buttoncontainer">
+                <button class="btn"> Join the Chamber!</button>
+            </div> -->
             
         </div>
         
@@ -72,9 +82,15 @@
 
         <section class="weathercard">
             <h2>Weather Card</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam amet, maxime totam nostrum, incidunt perspiciatis, qui ut sapiente sed mollitia facere explicabo similique. Ratione ea labore error eligendi? Repudiandae, quisquam.
-            </p>
+            <div>
+                <input id="temperature" type="number" placeholder="Temperature"><br>
+                <input id="windspeed" type="number" placeholder="Windspeed"><br>
+                <button onclick="getWindchill()">Submit</button>
+            </div>
+            
+            <div>
+                <p class="windchill">WindChill: </p>
+            </div>
         </section>
 
         <section class="companyads">
@@ -88,7 +104,7 @@
     <footer>
         <section>
             <div class="imgandtitle">
-                <img class="headerimg" src="images/logo.png" alt="Rexburg Chamber of Commerce Logo">
+                <img class="headerimg" src="images/logo.webp" alt="Rexburg Chamber of Commerce Logo">
             </div>
 
             <div class="contactus">
@@ -106,6 +122,7 @@
             </p>
         </section>
     </footer>
+    <script src="scripts/windchill.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburgermenu.js"></script>
     <script src="scripts/darkmode.js"></script>
