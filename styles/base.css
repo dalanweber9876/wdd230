@@ -107,7 +107,7 @@ a:link.projects, a:visited.projects{
 }
 
 #menu {
-	font-size: 1.5rem;
+	font-size: 0;
 	border: 1px solid rgba(0,0,0,.3);
 	padding: 3px 7px 6px;
 	background-color: #eee;
@@ -118,7 +118,9 @@ a:link.projects, a:visited.projects{
 }
 
 #menu::before {
+    visibility: visible;
 	content: "☰";
+    font-size: 1.5rem;
 }
 
 .navigationbar li {
