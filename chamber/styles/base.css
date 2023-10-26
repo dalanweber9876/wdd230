@@ -7,9 +7,6 @@ header {
 }
 
 header:first-child .headerimg {
-    /* width: 200px;
-    height: 200px; */
-    
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 5%;
@@ -291,4 +288,52 @@ main ul {
     font-weight: 700;
     font-size: 1rem;
     font-family: serif;
+}
+
+.sidebar {
+    text-align: center;
+    grid-column: 1/2;
+}
+
+.gallery {
+    grid-column: 1/2;
+    text-align: center;
+}
+.sidebar div {
+    border: 1px solid black;
+    margin: 20px;
+    padding: 10px;
+}
+
+.galleryimg {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+}
+
+.sidebar div{
+    background-color: #8FBCCC;
+}
+
+#council {
+    background-color: #c2c2c2;
+}
+
+#bear, #creek, #museum, #temple, #rapids, #drivein {
+    position: relative;
+}
+
+.caption {
+    background-color: white;
+    padding: 15px;
+    width: 100px;
+    position: absolute;
+    top: -100px;
+    left: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 6px;
+}
+
+.sidebar div:first-child {
+    background-color: #c2c2c2;
 }

@@ -83,4 +83,16 @@
     .label p {
         font-size: 1.5rem;
     }
+
+    .sidebar {
+        grid-column: 1/2;
+    }
+    
+    .gallery {
+        grid-column: 2/3;
+    }
+
+    .galleryimg:hover {
+       box-shadow: 0 0 50px #333;
+    }
 }

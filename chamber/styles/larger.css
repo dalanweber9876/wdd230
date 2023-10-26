@@ -62,4 +62,14 @@
     .label p {
         font-size: 2rem;
     }
+
+    .sidebar {
+        grid-column: 1/2;
+    }
+    
+    .gallery {
+        grid-column: 2/4;
+    }
+
+    
 }
