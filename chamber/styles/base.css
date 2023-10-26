@@ -309,6 +309,7 @@ main ul {
     width: 100%;
     padding: 10px;
     height: auto;
+    margin-top: 30px;
 }
 
 .sidebar div{
@@ -317,21 +318,6 @@ main ul {
 
 #council {
     background-color: #c2c2c2;
-}
-
-#bear, #creek, #museum, #temple, #rapids, #drivein {
-    position: relative;
-}
-
-.caption {
-    background-color: white;
-    padding: 15px;
-    width: 100px;
-    position: absolute;
-    top: -100px;
-    left: 10%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 6px;
 }
 
 .sidebar div:first-child {
