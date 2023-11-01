@@ -1,0 +1,28 @@
+:root {
+    --display: block;
+    --background-color:#D9E8E6;
+    --font-size: 12px;
+}
+
+form label, #formmessage {
+    display: var(--display);
+    text-align: left;
+    padding: 10px;
+}
+
+form input {
+    display: var(--display);
+}
+
+#rangevalues {
+    display: flex;
+    margin-left: 3px;
+}
+
+form option {
+    font-size: var(--font-size)
+}
+
+body {
+    background-color: var(--background-color);
+}
