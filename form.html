@@ -25,7 +25,7 @@
     </header>
 
     <nav> 
-        <button id="menu" alt="Hamburger Menu">Button</button>
+        <button id="menu">Button</button>
         <ul class="navigationbar">
             <li> <a href="index.html">Home</a> </li>
             <li> <a href="lesson03/chamber-site-plan.html">Site Plan</a> </li>
@@ -38,7 +38,7 @@
     <main>
         
         <form method="get" action="/record.html">
-            <p id="formmessage"></p>
+            <div id="formmessage"></div>
             <label>Username<input type="text" id="username" name="username" required></label>
             <label>Password<input type="password" id="password" name="password" required pattern=".{8,}" placeholder="8+ characters"></label>
             <label>Confirm Password<input type="password" id="password2" name="password2" required></label>
@@ -57,7 +57,6 @@
                 <option value="9">9</option>
                 <option value="10">10</option>
             </datalist>
-            <div id="rangevalue">0</div>
             </label>
             <label><button id="submitbutton" type="submit">Submit Form</button></label>
         </form>
