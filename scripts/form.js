@@ -20,7 +20,7 @@ kp2.addEventListener("focusout", checkSame);
 function checkSame() {
 	if (kp1.value !== kp2.value) {
 		message.textContent = "❗Key Phrases DO NOT MATCH!";
-		message.style.display = "show";
+		message.style.visibility = "show";
 		kp2.style.backgroundColor = "#fff0f3";
 		kp2.value = "";
         kp1.value = "";
