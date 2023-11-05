@@ -95,4 +95,10 @@
     .galleryimg:hover {
        box-shadow: 0 0 50px #333;
     }
+
+    #tymessage, #processed {
+        grid-column: 1/3;
+        padding: 1rem 1rem 0 1rem;
+        text-align: center;
+    }
 }

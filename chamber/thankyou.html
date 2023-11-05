@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Rexburg Chamber of Commerce</title>
+    <meta name="description" content="This the join form for the Rexburg Chamber of Commerce website. It is designed to allow people of the community join the chamber and benefit from it. ">
+    <meta name="author" content="Dalan Weber">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <meta property="og:title" content="Rexburg Chamber of Commerce Homepage"> 
+    <meta property="og:type" content="website"> 
+    <meta property="og:image" content="https://s3.us-west-2.amazonaws.com/assets.eastidahonews.com/wp-content/uploads/2022/10/Rexburg.jpg"> 
+    <meta property="og:url" content="https://dalanweber9876.github.io/wdd230/chamber/index.html">
+</head>
+
+<body>
+    <header>
+        <img class="headerimg" src="images/logo.webp" alt="Rexburg Chamber of Commerce Logo">
+        <h1>Rexburg Chamber of Commerce</h1>
+
+        <button id="menu"></button>
+        <nav>
+            <ul class="navigationbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        <div class="darkmode">
+            <label class="switch">
+                <input type="checkbox" id="myCheck" onclick="myFunction()">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        
+
+    </header>
+    
+    <main>
+        <h3 id="tymessage">Thank you for filling out the Rexburg Chamber of Commerce application form.</h3>
+        <p id="processed">Your request is being processed.</p>
+
+    </main>
+
+    <footer>
+        <section>
+            <div class="imgandtitle">
+                <img class="headerimg" src="images/logo.webp" alt="Rexburg Chamber of Commerce Logo">
+            </div>
+
+            <div class="contactus">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>+1 (208) 738-8007</li>
+                    <li>rexburgcommerce@gmail.com</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <p>
+                <span class="currentYear"></span> | Dalan Weber | WDD 230 Chamber Project | <span id="last-modified"></span>
+            </p>
+        </section>
+    </footer>
+    <script src="scripts/timestamp.js"></script>
+    <script src="scripts/regex.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+</body>
+</html>
