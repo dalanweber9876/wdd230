@@ -1,0 +1,23 @@
+{
+    "familyName" : "Doe",
+    "movedInDate": "11-06-2023",
+    "numberOfRecords" : "3",
+    "bishopricVisited" : "No",
+    "members" : [
+        {
+            "name" : "John",
+            "gender" : "Male",
+            "birthdate" : "03-03-1972"
+        },
+        {
+            "name" : "Mary",
+            "gender" : "Female",
+            "birthdate" : "10-24-1973"
+        },
+        {
+            "name" : "Baby",
+            "gender" : "Male",
+            "birthdate" : "08-02-2023"
+        }
+    ]
+}
