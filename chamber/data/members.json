@@ -1,0 +1,67 @@
+{
+    "companies" : [
+        {
+            "name" : "BMC - Building Materials Center",
+            "address" : "202 W Main St.Rexburg, ID",
+            "phone" : "208-356-9292",
+            "website" : "https://www.buildwithbmc.com",
+            "image" : "images/BMC.webp",
+            "membership" : "Bronze",
+            "hours" : "7:30am - 5:30pm"
+        },
+        {
+            "name" : "Fat Cats of Rexburg",
+            "address" : "475 N 2nd E Rexburg, ID",
+            "phone" : "208-359-2600",
+            "website" : "www.fatcatsfun.com/rexburg/",
+            "image" : "images/fat-cats.webp",
+            "membership" : "Silver",
+            "hours" : "11am - 11pm"
+        },
+        {
+            "name" : "Legacy Flight Museum",
+            "address" : "Po Box 122 Rexburg, ID",
+            "phone" : "208-359-5905",
+            "website" : "https://www.rexburg.org/area-info/page/legacy-flight-museum/",
+            "image" : "images/legacy-museum.webp",
+            "membership" : "Bronze",
+            "hours" : "9am - 5pm"
+        },
+        {
+            "name" : "Romance Theater",
+            "address" : "35 N 1st E Rexburg, ID",
+            "phone" : "208-359-3020",
+            "website" : "https://www.rexburgonline.com/things-to-do/romance-theater/",
+            "image" : "images/romance-theater.webp",
+            "membership" : "Silver",
+            "hours" : "Varies"
+        },
+        {
+            "name" : "Yellowstone Bear World",
+            "address" : "6010 S 4300 W Rexburg, ID",
+            "phone" : "208-359-9688",
+            "website" : "https://yellowstonebearworld.com/",
+            "image" : "images/bear-world-logo.webp",
+            "membership" : "Gold",
+            "hours" : "9am - 6pm"
+        },
+        {
+            "name" : "Family Crisis Center",
+            "address" : "16 E Main St. Rexburg, ID",
+            "phone" : "208-356-0065",
+            "website" : "https://familycrisiscenter.wixsite.com/familycrisiscenter/",
+            "image" : "images/family-crisis.webp",
+            "membership" : "Non-Profit",
+            "hours" : "8am - 2pm"
+        },
+        {
+            "name" : "Millhollow Restaurant",
+            "address" : "48 S 1st E Rexburg, ID",
+            "phone" : "208-356-0847",
+            "website" : "https://www.millhollowrestaurant.com/",
+            "image" : "images/millows.webp",
+            "membership" : "Bronze",
+            "hours" : "10:30am - 11:30pm"
+        }
+    ]
+}
