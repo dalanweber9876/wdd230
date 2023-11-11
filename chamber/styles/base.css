@@ -462,7 +462,7 @@ textarea {
 
 #cards {
     display: grid;
-    grid-template: 1/2;
+    grid-column: 1/2;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
@@ -530,9 +530,20 @@ textarea {
 
 #fourth {
     grid-column: 4/5;
-    word-break: break-all;
 }
 
 #list section:nth-child(odd) {
 	background-color: var(--zebra);
+}
+
+#fourth, .card a {
+    text-decoration: none;
+}
+#fourth:visited, .card a:visited {
+    color: blue;
+}
+
+#title {
+    text-align: center;
+    font-size: 65px;
 }

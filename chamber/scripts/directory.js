@@ -22,16 +22,18 @@ function displayCards(companies) {
         let logo = document.createElement("img")
         let address = document.createElement("p")
         let number = document.createElement("p")
-        let website = document.createElement("p")
+        let website = document.createElement("a")
         address.innerHTML = company.address
         number.innerHTML = company.phone
-        website.innerHTML = company.website
+        website.innerHTML = "Website"
 
         card.setAttribute('class', "card")
         logo.setAttribute('class', "logo")
         logo.setAttribute('src', company.image);
         logo.setAttribute('alt', `${company.name}'s logo`);
         logo.setAttribute('loading', "lazy");
+
+        website.setAttribute('href', company.website)
 
         card.appendChild(logo);
         card.appendChild(address);
@@ -53,7 +55,7 @@ function displayList(companies) {
         name.innerHTML = company.name
         address.innerHTML = company.address
         number.innerHTML = company.phone
-        website.innerHTML = "Click Me"
+        website.innerHTML = "Website"
 
         item.setAttribute('class', "item")
         name.setAttribute('id', "first")
@@ -76,12 +78,11 @@ GetInfo()
 
 
 gridbutton.addEventListener("click", () => {
-	// example using arrow function
 	cardsDisplay.style.display = "grid";
     listDisplay.style.display = "none";
 });
 
-listbutton.addEventListener("click", showList); // example using defined function
+listbutton.addEventListener("click", showList);
 
 function showList() {
 	cardsDisplay.style.display = "none";
