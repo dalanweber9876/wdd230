@@ -1,13 +1,13 @@
 {
     "companies" : [
         {
-            "name" : "BMC - Building Materials Center",
-            "address" : "202 W Main St.Rexburg, ID",
-            "phone" : "208-356-9292",
-            "website" : "https://www.buildwithbmc.com",
-            "image" : "images/BMC.webp",
+            "name" : "A-1 Rental Inc.",
+            "address" : "920 University BLVD Rexburg, ID",
+            "phone" : "208-356-6371",
+            "website" : "https://a1rental.net/",
+            "image" : "images/A-1-Rental.webp",
             "membership" : "Bronze",
-            "hours" : "7:30am - 5:30pm"
+            "hours" : "8am - 5pm"
         },
         {
             "name" : "Fat Cats of Rexburg",
