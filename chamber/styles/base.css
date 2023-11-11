@@ -455,3 +455,84 @@ textarea {
     margin: -20px 0 2rem 0;
 
 }
+
+#directory {
+    grid-template-columns: 1fr;
+}
+
+#cards {
+    display: grid;
+    grid-template: 1/2;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card {
+    margin: 0.25rem;
+    padding: 1rem;
+    background-color: lightblue;
+    border: 1px solid #bbb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card p, .item p {
+    min-height: 6px;
+    
+}
+
+.logo {
+    width: auto;
+    max-width: 340px;
+    box-shadow: 0 0 30px #777;
+    height: 200px;
+    border: 1px solid #333;
+}
+
+.viewMenu {
+	margin: 1rem auto;
+	padding: 0.5rem;
+	text-align: center;
+}
+
+.viewMenu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+#list {
+	display: flex;
+	flex-direction: column;
+    
+}
+
+#list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 1fr;
+	margin: 0;
+	padding: 1rem;
+}
+
+#list section > * {
+	margin: 0 1rem;
+}
+
+#first {
+    grid-column: 1/2;
+}
+
+#second {
+    grid-column: 2/3;
+}
+
+#third {
+    grid-column: 3/4;
+}
+
+#fourth {
+    grid-column: 4/5;
+    word-break: break-all;
+}
+
+#list section:nth-child(odd) {
+	background-color: var(--zebra);
+}
