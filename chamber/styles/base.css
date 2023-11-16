@@ -352,9 +352,9 @@ table {
 }
 
 caption {
-  padding: 10px;
-  caption-side: bottom;
-	color: var(--back);
+    padding: 10px;
+    caption-side: bottom;
+    color: black;
 	font-size: .85rem;
 }
 
@@ -445,6 +445,7 @@ textarea {
     margin: 0 auto 2rem auto;
     width: 96%;
     max-width: 20rem;
+    font-size: 25px;
 }
 
 #tymessage, #processed {
@@ -546,4 +547,8 @@ textarea {
 #title {
     text-align: center;
     font-size: 65px;
+}
+
+#tabletitle {
+    color: black;
 }
