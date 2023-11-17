@@ -1,6 +1,5 @@
 const temperature = document.querySelector("#temperature");
 const icon = document.querySelector("#weathericon");
-const forecast = document.querySelector("#forecast");
 const forecastInfo = document.querySelector("#forecastInfo")
 const url = "https://api.openweathermap.org/data/2.5/weather?lat=43.82&lon=-111.79&units=imperial&appid=bbd25f4da394239fb62bc33093cd4a09";
 const forecasturl = "https://api.openweathermap.org/data/2.5/forecast?lat=43.82&lon=-111.79&units=imperial&appid=bbd25f4da394239fb62bc33093cd4a09"
@@ -45,14 +44,11 @@ async function getForecast() {
 }
 
 function displayForecast(data) {
-    // data.list.forEach((item) => {
-    //     console.log(item.dt_txt)
-    // })
     var dateparts = data.list[0].dt_txt.split(" ")
     var date = dateparts[0]
     var highest = 0;
     var lowest = 10000;
-    for (i = 0; i < 24; i++) {
+    for (i = 0; i < 25; i++) {
         var parts = data.list[i].dt_txt.split(" ")
         if (parts[0] == date) {
             if (data.list[i].main.temp > highest) {
@@ -64,7 +60,6 @@ function displayForecast(data) {
         } else {
             var pieces = date.split("-");
             var tr = document.createElement("tr");
-            // li.innerHTML = `${pieces[1]}-${pieces[2]}: High - ${Math.round(highest)} Low - ${Math.round(lowest)}`;
             var forecastDate = document.createElement("td")
             forecastDate.innerHTML = `${pieces[1]}-${pieces[2]}`
 
@@ -94,9 +89,7 @@ function displayForecast(data) {
 
         var date = parts[0]
         console.log(parts[0])
-        // console.log(data.list[i].dt_txt)
     }
-    forecast.appendChild(ol)
 }
 
 getWeather();

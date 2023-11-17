@@ -1,4 +1,4 @@
-const button = document.querySelector('#bannerButton');
+const bannerButton = document.querySelector('#bannerButton');
 const banner = document.querySelector('#banner');
 
 // banner.classList.toggle("close");
@@ -25,6 +25,6 @@ function toggle() {
 }
 
 
-button.addEventListener('click', () => {
+bannerButton.addEventListener('click', () => {
 	toggle()
 });

@@ -189,7 +189,7 @@ main ul {
     height: auto;
 }
 
-.container .btn {
+.btn {
     grid-column: 1/4;
     position: absolute;
     top: 10%;
@@ -584,4 +584,9 @@ textarea {
 
 #banner.open {
     display: block;
+}
+
+#joinChamber {
+    text-decoration: none;
+    color: white;
 }
