@@ -20,10 +20,12 @@ header {
     width: 100%;
 }
 
-header:first-child .headerimg {
+header .headerimg {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 5%;
+    max-width: 100%;
+    height: auto;
 }
 
 footer .headerimg {
@@ -35,6 +37,7 @@ footer .headerimg {
 .heroimg {
     width: 100%;
     grid-column: 1/4;
+    margin-top: -5px;
 }
 
 h1 {
@@ -551,4 +554,34 @@ textarea {
 
 #tabletitle {
     color: black;
+}
+
+.labels {
+    background-color: #8FBCCC;
+}
+
+#weathertitle {
+    background-color: #70A9A1;
+    color: black;
+}
+
+#banner {
+   text-align: center;
+   position: sticky;
+   top: 0;
+   background-color: var(--background-color);
+   z-index: 1000;
+   padding: 20px;
+}
+
+#bannerButton::before {
+    content: "❌";
+}
+
+#banner.close {
+    display: none;
+}
+
+#banner.open {
+    display: block;
 }

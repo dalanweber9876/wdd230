@@ -19,6 +19,9 @@
 </head>
 
 <body>
+    <div id="banner">
+        <h3>You're invited to attend the Rexburg Chamber of Commerce meet and greet on Wednesday at 7:00 p.m. See you there!</h3><button id="bannerButton"></button>
+    </div>
     <header>
         <img class="headerimg" src="images/logo.webp" alt="Rexburg Chamber of Commerce Logo">
         <h1>Rexburg Chamber of Commerce</h1>
@@ -38,8 +41,6 @@
                 <span class="slider round"></span>
             </label>
         </div>
-        
-
     </header>
     
     <main>
@@ -84,16 +85,36 @@
         
 
         <section class="weathercard">
-            <h2>Weather Card</h2>
-            <div>
+            <h2>Rexburg Weather</h2>
+            <div id="temperature"></div>
+            <img id="weathericon" src="" alt="">
+            <div id="forecast"></div>
+            <Table>
+                <caption>Rexburg 3-Day Weather Forecast</caption>
+        
+                <thead>
+                    <tr>
+                        <th id="weathertitle" colspan="5" scope="colgroup">3-Day Forecast</th>
+                    </tr>
+                    <tr>
+                        <th class="labels">Date</th>
+                        <th class="labels">High</th>
+                        <th class="labels">Low</th>
+                    </tr>
+                </thead>
+        
+                <tbody id="forecastInfo"></tbody>
+            </Table>
+            <!-- <div>
                 <input id="temperature" type="number" placeholder="Temperature"><br>
                 <input id="windspeed" type="number" placeholder="Windspeed"><br>
                 <button onclick="getWindchill()">Submit</button>
+                
             </div>
             
             <div>
                 <p class="windchill">WindChill: </p>
-            </div>
+            </div> -->
         </section>
 
         <section class="companyads">
@@ -125,6 +146,8 @@
             </p>
         </section>
     </footer>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/weather.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburgermenu.js"></script>
