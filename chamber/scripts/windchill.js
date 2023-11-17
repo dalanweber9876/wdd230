@@ -1,7 +1,24 @@
 let answer = document.querySelector(".windchill")
-function getWindchill(){
-    let temp = document.getElementById("temperature").value;
-    let wspeed = document.getElementById("windspeed").value;
+const windchillurl = "https://api.openweathermap.org/data/2.5/weather?lat=43.82&lon=-111.79&units=imperial&appid=bbd25f4da394239fb62bc33093cd4a09";
+
+async function getWeather() {
+    try{
+        const response = await fetch(windchillurl);
+        if (response.ok){
+            const data = await response.json();
+            console.log(data);
+            getWindchill(data)
+        } else {
+            throw Error(await response.text());
+        }
+    } catch(error) {
+        console.log(error);
+    }
+}
+
+function getWindchill(data){
+    let temp = data.main.temp;
+    let wspeed = data.wind.speed;
     // alert(`${temp} ${wspeed}`)
     if (temp <= 50 && wspeed > 3)
     {
@@ -9,7 +26,8 @@ function getWindchill(){
         let rounded = Math.round(newAnswer * 10) / 10;
         answer.innerHTML = `Windchill: ${rounded} ℉`;
     } else {
-        answer.innerHTML = "N/A";
+        answer.innerHTML = "Windchill: N/A";
     }
     
 }
+getWeather();
