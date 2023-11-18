@@ -24,23 +24,23 @@
         <h1>Rexburg Chamber of Commerce</h1>
 
         <button id="menu"></button>
-        <nav>
-            <ul class="navigationbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-            </ul>
-        </nav>
+        
         <div class="darkmode">
             <label class="switch">
                 <input type="checkbox" id="myCheck" onclick="myFunction()">
                 <span class="slider round"></span>
             </label>
         </div>
-        
-
     </header>
+    
+    <nav>
+        <ul class="navigationbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
     
     <main>
         <h3 id="tymessage">Thank you for filling out the Rexburg Chamber of Commerce application form.</h3>
@@ -56,17 +56,20 @@
 
             <div class="contactus">
                 <h3>Contact Us</h3>
-                <ul>
+                <p>+1 (208) 738-8007</p>
+                <p>rexburgchamber@gmail.com</p>
+                <!-- <ul>
                     <li>+1 (208) 738-8007</li>
                     <li>rexburgcommerce@gmail.com</li>
-                </ul>
+                </ul> -->
             </div>
         </section>
 
-        <section>
+        <section id="footerinfo">
             <p>
-                <span class="currentYear"></span> | Dalan Weber | WDD 230 Chamber Project | <span id="last-modified"></span>
+                <span class="currentYear"></span> | Dalan Weber | WDD 230 Chamber Project 
             </p>
+            <p><span id="last-modified"></span></p>
         </section>
     </footer>
     <script src="scripts/timestamp.js"></script>

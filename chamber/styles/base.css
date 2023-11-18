@@ -12,66 +12,81 @@
     --font-size: 12px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
     position: relative;
     display: inline-flex;
-    margin: auto;
+    /* margin: auto; */
+    align-items: center;
+    justify-content: center;
     background-color: #70A9A1;
     width: 100%;
+    padding: 10px;
 }
 
 header .headerimg {
-    margin-top: auto;
+    /* margin-top: auto;
     margin-bottom: auto;
-    margin-left: 5%;
-    max-width: 100%;
+    margin-left: 5%; */
+    width: 100px;
     height: auto;
+    padding-top: 20px;
+    margin-right: 35px;
+    
 }
 
 footer .headerimg {
-    width: 150px;
-    height: 150px;
-    margin-left: -25%;
+    width: 100px;
+    /* height: 150px; */
+    /* margin-left: -25%; */
 }
 
 .heroimg {
-    width: 100%;
+    /* width: 100%; */
     grid-column: 1/4;
     margin-top: -5px;
 }
 
 h1 {
-    text-align: left;
+    /* text-align: left;
     padding: 70px 0;
-    padding-left: 5%;
+    padding-left: 5%; */
+    font-size: 1.5rem;
+    padding-top: 20px;
 }
 
 footer section {
     background-color: #70A9A1;
-    display: inline-flex;
-    width: 100%;
+    display: flex;
+    /* width: 100%; */
+    align-items: center;
     justify-content: center;
     padding: 10px;
     
 }
 
-footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+#footerinfo {
+    display: block;
+    text-align: center;
 }
 
-.imgandtitle {
-    display: inline-flex;
+
+/* .imgandtitle {
+    display: flex;
     text-align: center;
     margin-right: 5%;
     margin-left: 10%;
     padding: 20px;
-}
+} */
 
-footer {
+/* footer {
     width: 98.6%;
-}
+} */
 
 main {
     display: grid;
@@ -86,7 +101,7 @@ main {
     
 }
 
-.calltoaction {
+/* .calltoaction {
     position: relative;
     grid-column: 1/2;
     margin: 10%;
@@ -95,7 +110,7 @@ main {
     margin-bottom: 20%;
     background-color: #70A9A1;
     
-}
+} */
 
 .weathercard {
     grid-column: 1/2;
@@ -125,8 +140,7 @@ main ul {
 }
 
 .contactus {
-    margin-top: 35px;
-    margin-right: 30px;
+    padding: 10px;
 }
 
 #menu {
@@ -136,8 +150,8 @@ main ul {
 	background-color: #eee;
 	color: #000;
  	position: absolute;
-	left: 92%;
-	top: 2%;
+	right: 5px;
+	top: 5px;
 }
 
 #menu::before {
@@ -158,6 +172,7 @@ main ul {
 	text-decoration: none;
 	color: #fff;
     background-color: #1f363d;
+    width: 100%;
 }
 .navigationbar li a:hover {
 	background-color: #bbb;
@@ -165,14 +180,9 @@ main ul {
 	font-weight: 700;
 }
 
-.navigationbar {
-    margin-top: 60px;
-    margin-left: -25px;
-}
-
 .open li {
 	display: block;
-	width: 88%;
+	
 }
 .open li a {
 	display: block;
@@ -180,7 +190,7 @@ main ul {
 
 .container {
     position: relative;
-    width: 100%;
+    /* width: 100%; */
     grid-column: 1/4;
 }
 
@@ -281,8 +291,8 @@ main ul {
 
   .darkmode {
     position: absolute;
-    right: 10%;
-    top: 3%;
+    right: 50px;
+    top: 5px;
   }
 
   .label p::before {
@@ -422,6 +432,7 @@ body {
 
 form {
     padding: 0 2rem;
+    font-size: 12px;
 }
 
 fieldset {
@@ -435,7 +446,7 @@ form div {
 }
 
 textarea {
-    width: 100%;
+    /* width: 100%; */
     height: 100px;
 }
 
@@ -479,8 +490,9 @@ textarea {
     flex-direction: column;
     align-items: center;
 }
-.card p, .item p {
+.card p, .item p, .item a {
     min-height: 6px;
+    font-size: .75rem;
     
 }
 
@@ -508,6 +520,8 @@ textarea {
 	flex-direction: column;
     
 }
+
+/* .item */
 
 #list section {
 	display: grid;
@@ -589,4 +603,16 @@ textarea {
 #joinChamber {
     text-decoration: none;
     color: white;
+    width: 180px;
+    
+}
+
+.buttoncontainer {
+    position: absolute;
+    left: 100px;
+    top: 30px;
+}
+
+#membershipbenefits {
+    font-size: 9.5px;
 }

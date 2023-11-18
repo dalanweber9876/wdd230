@@ -27,14 +27,7 @@
         <h1>Rexburg Chamber of Commerce</h1>
 
         <button id="menu"></button>
-        <nav>
-            <ul class="navigationbar">
-                <li><a href="#">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-            </ul>
-        </nav>
+        
         <div class="darkmode">
             <label class="switch">
                 <input type="checkbox" id="myCheck" onclick="myFunction()">
@@ -43,7 +36,17 @@
         </div>
     </header>
     
+    <nav>
+        <ul class="navigationbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
     <main>
+        
         <div class="container">
             <img class="heroimg" src="images/heroimg.webp" alt="Sky view picture of Rexburg">
             <!-- <div class="hero">
@@ -71,24 +74,13 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam amet, maxime totam nostrum, incidunt perspiciatis, qui ut sapiente sed mollitia facere explicabo similique. Ratione ea labore error eligendi? Repudiandae, quisquam.
             </p>
         </section>
-
-        <section class="calltoaction">
-            <ul>
-                <li>Name:</li>
-                <li>Business:</li>
-                <li>Phone Number:</li>
-                <li>Email:</li>
-            </ul>
-            <button class="formbutton"> Join the Chamber!</button>
-        </section>
         
-
         <section class="weathercard">
             <h2>Rexburg Weather</h2>
             <div id="temperature"></div>
             <img id="weathericon" src="replace" alt="replace">
             <!-- <div id="forecast"></div> -->
-            <p class="windchill">WindChill: 30</p>
+            <p class="windchill"></p>
             <Table>
                 <caption>Rexburg 3-Day Weather Forecast</caption>
         
@@ -133,17 +125,20 @@
 
             <div class="contactus">
                 <h3>Contact Us</h3>
-                <ul>
+                <p>+1 (208) 738-8007</p>
+                <p>rexburgchamber@gmail.com</p>
+                <!-- <ul>
                     <li>+1 (208) 738-8007</li>
                     <li>rexburgcommerce@gmail.com</li>
-                </ul>
+                </ul> -->
             </div>
         </section>
 
-        <section>
+        <section id="footerinfo">
             <p>
-                <span class="currentYear"></span> | Dalan Weber | WDD 230 Chamber Project | <span id="last-modified"></span>
+                <span class="currentYear"></span> | Dalan Weber | WDD 230 Chamber Project 
             </p>
+            <p><span id="last-modified"></span></p>
         </section>
     </footer>
     <script src="scripts/banner.js"></script>
