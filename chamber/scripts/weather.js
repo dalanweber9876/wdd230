@@ -46,6 +46,19 @@ function displayForecast(data) {
     var date = dateparts[0]
     var highest = 0;
     var lowest = 10000;
+
+    
+    let today = new Date();
+    let year = today.getFullYear();
+    let month = (today.getMonth() + 1).toString().padStart(2, '0');
+    let day = today.getDate().toString().padStart(2, '0');
+
+    let dateString = `${year}-${month}-${day}`;
+
+
+    if (date == dateString) {
+        data.list.splice(0,1)
+    }
     for (i = 0; i < 25; i++) {
         var parts = data.list[i].dt_txt.split(" ")
         if (parts[0] == date) {
