@@ -57,6 +57,7 @@ function displayForecast(data) {
     }
     for (i = 0; i < 25; i++) {
         var parts = data.list[i].dt_txt.split(" ")
+        
         if (parts[0] == date) {
             if (data.list[i].main.temp > highest) {
                 highest = data.list[i].main.temp;
@@ -76,10 +77,13 @@ function displayForecast(data) {
             var min = document.createElement("td")
             min.innerHTML = Math.round(lowest)
 
-            tr.appendChild(forecastDate)
-            tr.appendChild(max)
-            tr.appendChild(min)
-
+            if (date != dateString)
+            {
+                tr.appendChild(forecastDate)
+                tr.appendChild(max)
+                tr.appendChild(min)
+            }
+                
             forecastInfo.appendChild(tr)
             
 
