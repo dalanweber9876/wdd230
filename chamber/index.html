@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rexburg Chamber of Commerce</title>
+    <title>Rexburg Chamber of Commerce - Homepage</title>
     <meta name="description" content="This the homepage for the Rexburg Chamber of Commerce website. It is designed to provide access to resources and relationships that help businesses in the area grow. It provides a platform in which businesses can market their products to help reach the people of the city. The Rexburg Chamber of Commerce updates the city on any events that are taking place.">
     <meta name="author" content="Dalan Weber">
     <link rel="icon" href="images/favicon.ico">
@@ -49,18 +49,7 @@
         
         <div class="container">
             <img class="heroimg" src="images/heroimg.webp" alt="Sky view picture of Rexburg">
-            <!-- <div class="hero">
-                <div class="label">
-                    <p></p>
-                </div>
-                <picture>
-                    <source media="(max-width: 600px)" srcset="images/temp-hero-small.webp">
-                    <source media="(max-width: 1000px)" srcset="images/temp-hero-medium.webp">
-                    <img src="images/temp-hero-large.webp" alt="Meeting of three people" width="1280" height="640">
-                </picture>
-            </div> -->
             <div class="buttoncontainer">
-                <!-- <button class="btn"><a id="joinChamber" href="join.html"> Join the Chamber!</a></button> -->
                 <a id="joinChamber" class="btn" href="join.html"> Join the Chamber!</a>
                 
             </div>
@@ -70,16 +59,19 @@
 
         <section class="currentevents">
             <h2>Current Events</h2>
+            <h4 id="citycouncilheader">
+                Rexburg city council gathered on Wednesday for bi-monthly meeting
+            </h4>
+            <img id="citycouncil" src="images/citycouncil.webp" alt="Picture of city council" height="500">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam amet, maxime totam nostrum, incidunt perspiciatis, qui ut sapiente sed mollitia facere explicabo similique. Ratione ea labore error eligendi? Repudiandae, quisquam.
+                The Rexburg City Council held its bi-monthly meeting, addressing various community matters after recent municipal elections. The mayor announced a $2 million grant for street improvements, and the Rexburg Police Department recognized officers for certifications. Committee reports covered topics like parking around Porter Park, upcoming community events, and city structure updates. The finance report included the High Five Grant for a community kitchen in a food truck. Public Works discussed airport relocation, and Planning and Zoning proposed a city sign upgrade amendment. The council approved several proposals, and a public hearing for rate and fee changes is scheduled for December 6.
             </p>
         </section>
         
         <section class="weathercard">
             <h2>Rexburg Weather</h2>
             <div id="temperature"></div>
-            <img id="weathericon" src="replace" alt="replace">
-            <!-- <div id="forecast"></div> -->
+            <img id="weathericon" src="images/favicon.ico" alt="replace">
             <p class="windchill"></p>
             <Table>
                 <caption>Rexburg 3-Day Weather Forecast</caption>
@@ -97,23 +89,14 @@
         
                 <tbody id="forecastInfo"></tbody>
             </Table>
-            <!-- <div>
-                <input id="temperature" type="number" placeholder="Temperature"><br>
-                <input id="windspeed" type="number" placeholder="Windspeed"><br>
-                <button onclick="getWindchill()">Submit</button>
-                
-            </div>
-            
-            <div>
-                <p class="windchill">WindChill: </p>
-            </div> -->
         </section>
 
         <section class="companyads">
-            <h2>Company Advertisements</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam amet, maxime totam nostrum, incidunt perspiciatis, qui ut sapiente sed mollitia facere explicabo similique. Ratione ea labore error eligendi? Repudiandae, quisquam.
-            </p>
+            <h2>Featured Businesses</h2>
+            <section id="groupedads">
+
+            </section>
+            
         </section>
     </main>
 
@@ -127,10 +110,6 @@
                 <h3>Contact Us</h3>
                 <p>+1 (208) 738-8007</p>
                 <p>rexburgchamber@gmail.com</p>
-                <!-- <ul>
-                    <li>+1 (208) 738-8007</li>
-                    <li>rexburgcommerce@gmail.com</li>
-                </ul> -->
             </div>
         </section>
 
@@ -141,6 +120,7 @@
             <p><span id="last-modified"></span></p>
         </section>
     </footer>
+    <script src="scripts/spotlight.js"></script>
     <script src="scripts/banner.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/windchill.js"></script>

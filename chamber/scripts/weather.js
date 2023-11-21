@@ -9,13 +9,11 @@ async function getWeather() {
         const response = await fetch(url);
         if (response.ok){
             const data = await response.json();
-            // console.log(data);
             displayWeather(data)
         } else {
             throw Error(await response.text());
         }
     } catch(error) {
-        console.log(error);
     }
 }
 
@@ -31,13 +29,11 @@ async function getForecast() {
         const response = await fetch(forecasturl);
         if (response.ok){
             const data = await response.json();
-            console.log(data);
             displayForecast(data)
         } else {
             throw Error(await response.text());
         }
     } catch(error) {
-        console.log(error);
     }
 }
 
@@ -99,7 +95,6 @@ function displayForecast(data) {
         }
 
         var date = parts[0]
-        console.log(parts[0])
     }
 }
 

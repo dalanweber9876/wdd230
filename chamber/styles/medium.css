@@ -119,6 +119,19 @@
     }
 
     #membershipbenefits {
-        font-size: 10px;
+        font-size: 12px;
+    }
+
+    .btn {
+        font-size: 25px;
+        text-align:center;
+        padding: 12px 24px;
+        top: 30px;
+        left: 30px;
+    }
+
+    #groupedads {
+        display: flex;
+        justify-content: space-around;
     }
 }

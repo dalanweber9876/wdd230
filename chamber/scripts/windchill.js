@@ -6,13 +6,11 @@ async function getWeather() {
         const response = await fetch(windchillurl);
         if (response.ok){
             const data = await response.json();
-            console.log(data);
             getWindchill(data)
         } else {
             throw Error(await response.text());
         }
     } catch(error) {
-        console.log(error);
     }
 }
 
