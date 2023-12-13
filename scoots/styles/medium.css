@@ -139,7 +139,40 @@
         grid-row: 9/10;
     }
 
-    #rentalsintro {
+    #rentalsintro, #reservationsintro, #tymessage{
         grid-column: 1/5;
     }
+
+    #reservationtable{
+        grid-column: 2/3;
+        margin: 0px;
+    }
+
+    #walkintable{
+        grid-column: 3/4;
+        margin: 0px;
+    }
+
+    .rentalsmain {
+        grid-template-columns: 20px 1fr 1fr 20px;
+        grid-gap: 50px;
+    }
+
+    #agreementinfo li {
+        font-size: 2vw;
+    }
+
+    #agreementinfo {
+        grid-column: 3/5;
+    }
+
+    #form {
+        grid-column: 1/3;
+        grid-row: 2/4;
+    }
+
+    #reservationimage {
+        display: none
+    }
+
 }

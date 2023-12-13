@@ -188,7 +188,7 @@ th, td {
 }
 
 th {
-	background-color: grey;
+	background-color: lightgrey;
 	font-size: larger;
 }
 
@@ -198,6 +198,13 @@ td {
 
 tbody tr:nth-child(odd) {
 	background-color: #ADC8D7;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: black;
+	font-size: .85rem;
 }
 /* End Tables */
 
@@ -218,7 +225,7 @@ div p {
     align-items: center;
 }
 
-.mainimages {
+.mainimages, #reservationimage {
     padding-top: 20px;
     max-width: 100%;
     max-height: 100%;
@@ -261,3 +268,84 @@ div p {
  #banner.open {
      display: block;
  }
+
+ #reservationtable{
+    margin: 20px;
+}
+
+#walkintable{
+    margin: 20px;
+}
+
+/* Form */
+form label {
+    font-size: 20px;
+    display: block;
+    text-align: left;
+    padding: 10px;
+}
+
+form input {
+    display: block;
+}
+
+.radiodata {
+    display: inline-flex;
+}
+
+#submitbutton {
+    display: lightgrey;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+form {
+    padding: 0 2rem;
+    font-size: 20px;
+}
+
+fieldset {
+    border-radius: 15px;
+    background-color: #ADC8D7;
+    margin-top: 1rem;
+}
+
+form div {
+    display: block;
+    padding-top: 1rem;
+}
+
+textarea {
+    display: block;
+    height: 100px;
+}
+
+#submitBtn {
+    border: none;
+    background-color: #5187A5;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 auto 2rem auto;
+    width: 96%;
+    max-width: 20rem;
+    font-size: 25px;
+}
+
+#tymessage, #processed {
+    padding: 1rem;
+    text-align: center;
+}
+#processed {
+    margin: -20px 0 2rem 0;
+}
+
+legend {
+    font-size: 1.5rem;
+}
+/* End Form */
+
+#reservationimage {
+    padding: 15px;
+    border-radius: 40px;
+}

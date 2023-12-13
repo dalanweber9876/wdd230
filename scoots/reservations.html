@@ -35,7 +35,60 @@
     </header>
     
     <main>
-        
+        <div id="reservationsintro">
+          <h1 class="titles">Reservations</h1>
+          <p>
+            Embark on a seamless reservation experience with Scoots Rentals on the picturesque island of Cozumel. Our reservations page ensures a hassle-free process as you plan your getaway, collecting essential details with a user-friendly form. From date preferences to special accommodations, we've crafted a straightforward layout to make your reservation process as smooth as the island breeze. Secure your chosen vehicle effortlessly and get ready to create lasting memories with Scoots Rentals.
+          </p>
+        </div>
+
+        <div id="agreementinfo">
+          <h1 class="titles">Rental Agreement Information</h1>
+          <ol>
+            <li>A $50 security deposit is required to confirm reservations.</li>
+            <li>A valid drivers license is required in hand at the time of rental.</li>
+            <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+            <li>Fuel charge is not included.</li>
+            <li>Unlimited mileage.</li>
+            <li>Liability insurance is included.</li>
+            <li>Damage insurance is available for purchase.</li>
+            <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+            <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+            <li>Rentals may be returned to either physical location.</li>
+          </ol>
+        </div>
+
+        <form id="form" method="get" action="thankyou.html">
+
+          <fieldset>
+              <legend>Rental Information</legend>
+              <label>Start Date<input type="date" id="sdate" name="sdate" required></label>
+              <label>End Date<input type="date" id="edate" name="edate" required></label>
+              <div>Rental Selection</div>
+              <label class="radio"><input class="radiodata" type="radio" name="selection" value="Honda Metro Scooter"> Honda Metro Scooter</label>
+              <label class="radio"><input class="radiodata" type="radio" name="selection" value="Honda Dio Scooter"> Honda Dio Scooter</label>
+              <label class="radio"><input class="radiodata" type="radio" name="selection" value="Honda PCX150 Scooter"> Honda PCX150 Scooter</label>
+              <label class="radio"><input class="radiodata" type="radio" name="selection" value="Honda Pioneer ATV"> Honda Pioneer ATV</label>
+              <label class="radio"><input class="radiodata" type="radio" name="selection" value="Jeep Wrangler - 4 door with a/c"> Jeep Wrangler - 4 door with a/c</label>
+              <label class="radio"><input class="radiodata" type="radio" name="selection" value="Jeep Wrangler - 2 door"> Jeep Wrangler - 2 door</label>
+              <label>Drop Off Location (if renting for 2+ days)<input type="text" id="dropoff" name="dropoff"></label>
+          </fieldset>
+
+          <fieldset>
+              <legend>Personal Information</legend>
+              <label>Name<input type="text" id="name" name="name" required></label>
+              <label>Phone Number<input type="tel" id="phone" name="phone" required></label>
+              <label>Email<input type="email" id="phone" name="phone" required placeholder="youremail@gmail.com"></label>
+              <label>Home State / Country<input type="text" id="home" name="home"></label>
+              <label>Cruise Line<input type="text" id="cruise" name="cruise"></label>
+              <label>Acdditional Comments
+                <textarea id="description" name="description"></textarea>
+              </label>                
+          </fieldset>
+          <label><button type="submit" id="submitBtn">Reserve Vehicle</button></label>
+      </form>
+
+      <img id="reservationimage" src="images/scootercozumel.webp" alt="A scooter with a beach in the background">
     </main>
 
     <footer>
