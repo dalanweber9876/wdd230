@@ -1,5 +1,5 @@
 {
-    "scooters" : [
+    "rental" : [
         {
             "name" : "Honda Metro Scooter",
             "maxperson" : "1",
@@ -49,11 +49,8 @@
                     "fullday" : "55"
                 }
             ]
-        }
-        
-    ],
+        },
 
-    "atvs" : [
         {
             "name" : "Honda Pioneer ATV",
             "maxperson" : "4",
@@ -69,10 +66,8 @@
                     "fullday" : "80"
                 }
             ]
-        }
-    ],
+        },
 
-    "jeeps" : [
         {
             "name" : "Jeep Wrangler - 4 door with a/c",
             "maxperson" : "5",
