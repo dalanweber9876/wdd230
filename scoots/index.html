@@ -1,0 +1,193 @@
+<!-- API Key: bbd25f4da394239fb62bc33093cd4a09 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots</title>
+    <meta name="author" content="Dalan Weber">
+    <meta name="description" content="This is the homepage for Scoots, a motor/scooter rental service on the island of Cozumel, Mexico. It is designed to showcase the company and the many services that are offered.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kalam&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Scoots Homepage"> 
+    <meta property="og:type" content="website"> 
+    <meta property="og:image" content="images/scooteronbeach.webp"> 
+    <meta property="og:url" content="https://dalanweber9876.github.io/wdd230/scoots/index.html"> 
+</head>
+<body>
+    <div id="banner">
+        <h3 id="hightemp"></h3><button id="bannerButton"></button>
+    </div>
+
+    <header>
+        <img class="logo" src="images/logo.webp" alt="Scoots logo">
+        <button id="menu"></button>
+        <nav> 
+            
+            <ul class="navigationbar">
+                <li> <a class="active" href="#">Home</a> </li>
+                <li> <a href="rentals.html">Rentals</a> </li>
+                <li> <a href="reservations.html">Reservations</a> </li>
+                <li> <a href="contact.html">Contact</a> </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="hero">
+            <img id="heroimg" src="images/cozumel.webp" alt="Picture of Cozumel island with water view">
+            <h1 id="herotxt">Explore, Discover, Smile</h1>
+            <button id="reserve" click="reservations.html">Make a Reservation</button>
+        </div>
+        
+        <div id="stress">
+            <h1 class="titles">Vacations Should Be Stress Free</h1>
+            <p>
+                At Scoots, we believe that vacations are meant for relaxation, exploration, and creating unforgettable memories. That's why we've designed our rental services to make your Cozumel getaway as stress-free as possible. Here are some things that we offer.
+            </p>
+        </div>
+
+        <div id="hasslefree">
+            <h1 class="titles">Hassle-Free Rentals</h1>
+            <p>
+                Enjoy a seamless rental process with Scoots. Whether you're a local looking for a quick ride or a tourist planning ahead, we've got you covered. Our user-friendly reservation system allows you to secure your preferred vehicle with just a $50 security deposit, giving you peace of mind.
+            </p>
+        </div>
+
+        <div id="first">
+            <img class="mainimages" src="images/cozumel1.webp" alt="Picture of hotel in Cozumel">
+        </div>
+
+        <div id="second">
+            <img class="mainimages" src="images/cozumel2.webp" alt="Picture of hotel in Cozumel">
+        </div>
+        
+
+        <div id="variety">
+            <h1 class="titles">Variety of Options</h1>
+            <p>
+                Choose from our diverse fleet of Honda Motor Scooters, Side-by-Side ATVs, and Jeeps. Whether you're riding solo or with a group, we have the perfect vehicle for your island adventure. From the nimble Honda Metropolitan to the rugged Jeep Wrangler, our rentals cater to every preference.
+            </p>
+        </div>
+
+        <div id="transparent">
+            <h1 class="titles">Transparent Pricing</h1>
+            <p>
+                We believe in transparency, and that extends to our pricing. Check out our competitive rates for half-day and full-day rentals. Plus, with unlimited mileage and included liability insurance, you can focus on the journey, not the details.
+            </p>
+        </div>
+
+        <div id="delivery">
+            <h1 class="titles">Delivery Convenience</h1>
+            <p>
+                For added convenience, we offer free delivery to Cozumel hotels or Airbnbs for rentals of two days or more. No need to worry about transportation – we'll bring your chosen vehicle to you.
+            </p>
+        </div>
+
+        <div id="payment">
+            <h1 class="titles">Easy Payment Options</h1>
+            <p>
+                Making a reservation is simple, and so is payment. Choose from various payment methods, including Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.
+            </p>
+        </div>
+
+        <div id="third">
+            <img class="mainimages" src="images/cozumel3.webp" alt="Picture of hotel in Cozumel">
+        </div>
+
+        <div id="final">
+            <h1 class="titles">Explore Stress-Free</h1>
+            <p>
+                Vacations are a time to explore, discover, and smile. Let Scoots be your trusted companion on the roads of Cozumel. With our reliable rentals and hassle-free services, you can focus on the beauty of the island and create lasting memories. Your stress-free vacation starts with Scoots. Reserve your ride today!
+            </p>
+        </div>
+
+        <div id="weather">
+            <h1 class="titles">Weather in Cozumel</h1>
+            <div id="titleicon">
+                <h2 id="maintemp"></h2>
+                <img id="weathericon" src="images/favicon.ico" alt="">
+            </div>
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="forecast"></p>
+            
+        </div>
+
+        
+            
+
+        <!-- <h1 class="titles">What We Offer</h1>
+        <table id="scooters">
+            <tr>
+                <th colspan="2" scope="colgroup">Scooters</th>
+            </tr>
+            <tr>
+                <td>Honda Metropolitan (49cc)</td>
+                <td>1 person</td>
+            </tr>
+            <tr>
+                <td>Honda Dio (110cc)</td>
+                <td>2 person</td>
+            </tr>
+            <tr>
+                <td>Honda PCX150 (149cc)</td>
+                <td>2 person</td>
+            </tr>
+        </table>
+
+        <table id="atvs">
+            <tr>
+                <th colspan="2" scope="colgroup">ATVs</th>
+            </tr>
+            <tr>
+                <td>Honda Pioneer 1000</td>
+                <td>4 person</td>
+            </tr>
+        </table>
+
+        <table id="jeeps">
+            <tr>
+                <th colspan="2" scope="colgroup">Jeeps</th>
+            </tr>
+            <tr>
+                <td>Jeep Wrangler - 4 door manuel with A/C</td>
+                <td>5 person</td>
+            </tr>
+            <tr>
+                <td>Jeep Wrangler - 2 door - open air - manuel</td>
+                <td>4 person</td>
+            </tr>
+        </table> -->
+        
+    </main>
+
+    <footer>
+        <img class="footerlogo" src="images/logo.webp" alt="Scoots logo">
+        <div class="footercontact">
+          <p>123 Main Street, Cozumel, Mexico</p>
+          <p>Phone: (888)110-1870</p>
+          <p>Email: info@scootsrentals.com</p>
+          <div class="socialmedia">
+            <a href="https://www.facebook.com" target="_blank"><img id="facebook" src="images/facebook.webp" alt="Facebook logo"></a>
+            <a href="https://www.instagram.com" target="_blank"><img id="instagram" src="images/instagram.webp" alt="Instagram logo"></a>
+            <a href="https://www.twitter.com" target="_blank"><img id="twitter" src="images/twitter.webp" alt="Twitter logo"></a>
+          </div>
+        </div>
+        <div class="footercopyright">
+          <p>&copy;<span id="year"></span> Dalan Weber | All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/reservationsbutton.js"></script>
+</body>
+</html>

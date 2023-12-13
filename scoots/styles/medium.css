@@ -1,0 +1,145 @@
+@media screen and (min-width:700px){
+    .navigationbar li {
+        font-size: 20px;
+        grid-column: 2/4;
+        display: flex;
+    }
+
+    nav {
+        grid-column: 2/4;
+    }
+
+    .navigationbar {
+        display: flex;
+        justify-content: space-between;
+        margin-left: -50px;
+    }
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 3fr 20px;
+    }
+
+    .logo {
+        grid-column: 1/2;
+    }
+
+    footer {
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+    }
+
+    .footerlogo {
+        grid-column:2/3;
+        width: 250px;
+        height: auto;
+    }
+    
+    .footercontact{
+        grid-column: 3/4;
+        
+    }
+
+    .footercontact p, .footercopyright p {
+        font-size: 20px;
+    }
+
+    .footercopyright {
+        grid-column: 1/5;
+    }
+
+    #facebook, #instagram, #twitter {
+        padding-right: 10px;
+    }
+
+    #reserve {
+        font-size: 1.75rem;    
+        top: 37%;
+    }
+    
+    main {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .hero {
+        grid-column: 1/5;
+    }
+
+    #scooters {
+        grid-column: 2/3;
+    }
+
+    #atvs {
+        grid-column: 3/4;
+    }
+
+    #jeeps {
+        grid-column: 2/4;
+    }
+
+    .titles {
+        grid-column: 1/5;
+    }
+
+    #stress {
+        grid-column: 1/5;
+    }
+
+    #hasslefree {
+        grid-column: 1/3;
+    }
+
+    #variety {
+        grid-column: 3/5;
+        grid-row: 5/6;
+    }
+
+    #transparent {
+        grid-column: 1/3;
+        grid-row: 6/7;
+    }
+
+    #delivery {
+        grid-column: 3/5;
+        grid-row: 6/7;
+    }
+
+    #payment {
+        grid-column: 1/3;
+        grid-row: 7/8;
+    }
+
+    #final {
+        grid-column: 1/5;
+        grid-row: 8/9;
+    }
+
+    #first {
+        grid-column: 3/5;
+    }
+
+    #second {
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+
+    #third {
+        grid-column: 3/5;
+        grid-row: 7/8;
+    }
+    .mainimages {
+        width: 90%;
+        height: auto;
+    }
+
+    #weather {
+        grid-column:2/4;
+        grid-row: 9/10;
+    }
+
+    #rentalsintro {
+        grid-column: 1/5;
+    }
+}
