@@ -1,6 +1,6 @@
 const url = "https://api.openweathermap.org/data/2.5/weather?lat=20.42242&lon=-86.92667&units=imperial&appid=bbd25f4da394239fb62bc33093cd4a09";
 const forecasturl = "https://api.openweathermap.org/data/2.5/forecast?lat=20.42242&lon=-86.92667&units=imperial&appid=bbd25f4da394239fb62bc33093cd4a09";
-const highurl = "https://pro.openweathermap.org/data/2.5/forecast/hourly?lat=20.42242&lon=86.92667&appid=bbd25f4da394239fb62bc33093cd4a09"
+const highurl = "https://api.openweathermap.org/data/2.5/weather?lat=20.42242&lon=-86.92667&units=imperial&appid=bbd25f4da394239fb62bc33093cd4a09"
 const temperature = document.querySelector("#temperature");
 const humidity = document.querySelector("#humidity");
 const icon = document.querySelector("#weathericon");
@@ -8,6 +8,7 @@ const forecast = document.querySelector("#forecast");
 const maintemp = document.querySelector("#maintemp");
 const hightemp = document.querySelector("#hightemp");
 const year = document.querySelector("#year");
+
 async function getWeather() {
     try{
         const response = await fetch(url);
@@ -69,7 +70,29 @@ function displayForecast(data) {
             forecast.innerHTML = `Tomorrow at 3pm - ${Math.round(element.main.temp)}&deg;F`;
         }
     });
-    hightemp.innerHTML = `Today's high is ${Math.round(highest)}&deg;F`
+    if (highest > 0) {
+        hightemp.innerHTML = `Today's high is ${Math.round(highest)}&deg;F`
+    } else {
+        getCurr();
+    }
+}
+
+async function getCurr() {
+    try{
+        const response = await fetch(highurl);
+        if (response.ok){
+            const data = await response.json();
+            displayCurr(data)
+            console.log(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch(error) {
+    }
+}
+
+function displayCurr(data) {
+    hightemp.innerHTML = `Today's high is ${Math.round(data.main.temp_max)}&deg;F`
 }
 
 
