@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scoots</title>
     <meta name="author" content="Dalan Weber">
-    <meta name="description" content="This is the homepage for Scoots, a motor/scooter rental service on the island of Cozumel, Mexico. It is designed to showcase the company and the many services that are offered.">
+    <meta name="description" content="This is the Reservation Page for Scoots, a motor/scooter rental service on the island of Cozumel, Mexico. It is designed to show the user the rental agreement info and provide a form for them to fill out to rent a vehicle.">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -15,10 +15,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kalam&display=swap" rel="stylesheet">
-    <meta property="og:title" content="Scoots Homepage"> 
+    <meta property="og:title" content="Scoots Reservations Page"> 
     <meta property="og:type" content="website"> 
     <meta property="og:image" content="images/scooteronbeach.webp"> 
-    <meta property="og:url" content="https://dalanweber9876.github.io/wdd230/scoots/index.html"> 
+    <meta property="og:url" content="https://dalanweber9876.github.io/wdd230/scoots/reservations.html"> 
 </head>
 <body>
     <header>
@@ -80,33 +80,33 @@
               <label>Phone Number<input type="tel" id="phone" name="phone" required></label>
               <label>Email<input type="email" id="phone" name="phone" required placeholder="youremail@gmail.com"></label>
               <label>Home State / Country<input type="text" id="home" name="home"></label>
-              <label>Cruise Line<input type="text" id="cruise" name="cruise"></label>
-              <label>Acdditional Comments
+              <label>Cruise Line (if applicable)<input type="text" id="cruise" name="cruise"></label>
+              <label>Additional Comments
                 <textarea id="description" name="description"></textarea>
               </label>                
           </fieldset>
           <label><button type="submit" id="submitBtn">Reserve Vehicle</button></label>
       </form>
 
-      <img id="reservationimage" src="images/scootercozumel.webp" alt="A scooter with a beach in the background">
+      <img id="reservationimage" src="images/scootercozumel.webp" alt="A scooter with a beach in the background" loading="lazy">
     </main>
 
     <footer>
-        <img class="footerlogo" src="images/logo.webp" alt="Scoots logo">
-        <div class="footercontact">
-          <p>123 Main Street, Cozumel, Mexico</p>
-          <p>Phone: (888)110-1870</p>
-          <p>Email: info@scootsrentals.com</p>
-          <div class="socialmedia">
-            <a href="https://www.facebook.com" target="_blank"><img id="facebook" src="images/facebook.webp" alt="Facebook logo"></a>
-            <a href="https://www.instagram.com" target="_blank"><img id="instagram" src="images/instagram.webp" alt="Instagram logo"></a>
-            <a href="https://www.twitter.com" target="_blank"><img id="twitter" src="images/twitter.webp" alt="Twitter logo"></a>
-          </div>
+      <img class="footerlogo" src="images/logo.webp" alt="Scoots logo">
+      <div class="footercontact">
+        <p>Headquarters: Calle Ficción #123, el Centro de Cozumel, QR 77600, Mexico</p>
+        <p>Phone: (888)110-1870</p>
+        <p>Email: info@scootsrentals.com</p>
+        <div class="socialmedia">
+          <a href="https://www.facebook.com" target="_blank"><img id="facebook" src="images/facebook.webp" alt="Facebook logo"></a>
+          <a href="https://www.instagram.com" target="_blank"><img id="instagram" src="images/instagram.webp" alt="Instagram logo"></a>
+          <a href="https://www.twitter.com" target="_blank"><img id="twitter" src="images/twitter.webp" alt="Twitter logo"></a>
         </div>
-        <div class="footercopyright">
-          <p>&copy;<span id="year"></span> Dalan Weber | All rights reserved</p>
-        </div>
-    </footer>
+      </div>
+      <div class="footercopyright">
+        <p>&copy;<span id="year"></span> Dalan Weber | All rights reserved</p>
+      </div>
+  </footer>
 
     <script src="scripts/weather.js"></script>
     <script src="scripts/hamburgermenu.js"></script>

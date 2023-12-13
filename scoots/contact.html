@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scoots</title>
     <meta name="author" content="Dalan Weber">
-    <meta name="description" content="This is the homepage for Scoots, a motor/scooter rental service on the island of Cozumel, Mexico. It is designed to showcase the company and the many services that are offered.">
+    <meta name="description" content="This is the Contact Page for Scoots, a motor/scooter rental service on the island of Cozumel, Mexico. It is designed to provide the user with any contact info that a user may need, including an embedded map showing the two locations of Scoots and a contact us form.">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -15,10 +15,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kalam&display=swap" rel="stylesheet">
-    <meta property="og:title" content="Scoots Homepage"> 
+    <meta property="og:title" content="Scoots Contact Page"> 
     <meta property="og:type" content="website"> 
     <meta property="og:image" content="images/scooteronbeach.webp"> 
-    <meta property="og:url" content="https://dalanweber9876.github.io/wdd230/scoots/index.html"> 
+    <meta property="og:url" content="https://dalanweber9876.github.io/wdd230/scoots/contact.html"> 
 </head>
 <body>
     <header>
@@ -35,25 +35,55 @@
     </header>
     
     <main>
+      <div id="contactintro">
+        <h1 class="titles">Contact Us</h1>
+        <p>Connect with Us! Whether you have questions, feedback, or just want to say hello, our team at Scoots is here for you. Reach out to us by filling out the form, and let's make your experience with us exceptional!</p>
+      </div>
 
+      <form id="contactform" method="get" action="thankyou.html">
+
+        <fieldset>
+          <legend>Contact Us</legend>
+          <label>Name<input type="text" id="name" name="name" required></label>
+          <label>Email<input type="email" id="phone" name="phone" required placeholder="youremail@gmail.com"></label>
+          <label>Comment
+            <textarea id="description" name="description"></textarea>
+          </label>                
+        </fieldset>
+        <label><button type="submit" id="submitBtn">Send Message</button></label>
+      </form>
+
+      <div id="othermethods">
+        <p>If you'd rather reach out to us directly, you can use one of the following options: </p>
+        <ul>
+          <li>Call us at (888)110-1870</li>
+          <li>Email us at info@scootsrentals.com</li>
+        </ul>
+        <p>Or come in and visit us at one of our two locations:</p>
+        <ul>
+          <li>Calle Ficción #123, el Centro de Cozumel, QR 77600, Mexico</li>
+          <li>Avenida Imaginaria #456, Zona Costera, Cozumel, QR 77660, Mexico</li>
+        </ul>
+      </div>
+      <iframe id="map" src="https://www.google.com/maps/d/embed?mid=1LjPESqZ287WGVdloVwxjiuRduocYlRE&ehbc=2E312F&noprof=1" width="640" height="480" loading="lazy"></iframe>
     </main>
 
     <footer>
-        <img class="footerlogo" src="images/logo.webp" alt="Scoots logo">
-        <div class="footercontact">
-          <p>123 Main Street, Cozumel, Mexico</p>
-          <p>Phone: (888)110-1870</p>
-          <p>Email: info@scootsrentals.com</p>
-          <div class="socialmedia">
-            <a href="https://www.facebook.com" target="_blank"><img id="facebook" src="images/facebook.webp" alt="Facebook logo"></a>
-            <a href="https://www.instagram.com" target="_blank"><img id="instagram" src="images/instagram.webp" alt="Instagram logo"></a>
-            <a href="https://www.twitter.com" target="_blank"><img id="twitter" src="images/twitter.webp" alt="Twitter logo"></a>
-          </div>
+      <img class="footerlogo" src="images/logo.webp" alt="Scoots logo">
+      <div class="footercontact">
+        <p>Headquarters: Calle Ficción #123, el Centro de Cozumel, QR 77600, Mexico</p>
+        <p>Phone: (888)110-1870</p>
+        <p>Email: info@scootsrentals.com</p>
+        <div class="socialmedia">
+          <a href="https://www.facebook.com" target="_blank"><img id="facebook" src="images/facebook.webp" alt="Facebook logo"></a>
+          <a href="https://www.instagram.com" target="_blank"><img id="instagram" src="images/instagram.webp" alt="Instagram logo"></a>
+          <a href="https://www.twitter.com" target="_blank"><img id="twitter" src="images/twitter.webp" alt="Twitter logo"></a>
         </div>
-        <div class="footercopyright">
-          <p>&copy;<span id="year"></span> Dalan Weber | All rights reserved</p>
-        </div>
-    </footer>
+      </div>
+      <div class="footercopyright">
+        <p>&copy;<span id="year"></span> Dalan Weber | All rights reserved</p>
+      </div>
+  </footer>
 
     <script src="scripts/weather.js"></script>
     <script src="scripts/hamburgermenu.js"></script>

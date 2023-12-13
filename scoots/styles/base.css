@@ -217,6 +217,12 @@ div p {
     padding: 0px 50px;
     font-size: 1.5rem;
     text-align: center;
+    
+}
+
+#othermethods ul li {
+    font-size: 1.5rem;
+    text-align: left;
 }
 
 #first, #second, #third {
@@ -346,6 +352,9 @@ legend {
 /* End Form */
 
 #reservationimage {
-    padding: 15px;
     border-radius: 40px;
+}
+
+#map {
+    width: 100%;
 }
