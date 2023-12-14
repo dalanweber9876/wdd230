@@ -15,7 +15,6 @@ async function getWeather() {
         if (response.ok){
             const data = await response.json();
             displayWeather(data)
-            console.log(data);
         } else {
             throw Error(await response.text());
         }
@@ -38,7 +37,6 @@ async function getForecast() {
         if (response.ok){
             const data = await response.json();
             displayForecast(data)
-            console.log(data);
         } else {
             throw Error(await response.text());
         }
@@ -83,7 +81,6 @@ async function getCurr() {
         if (response.ok){
             const data = await response.json();
             displayCurr(data)
-            console.log(data);
         } else {
             throw Error(await response.text());
         }

@@ -299,12 +299,6 @@ form input {
     display: inline-flex;
 }
 
-#submitbutton {
-    display: lightgrey;
-    margin-left: 10px;
-    padding: 5px;
-}
-
 form {
     padding: 0 2rem;
     font-size: 20px;
@@ -357,4 +351,10 @@ legend {
 
 #map {
     width: 100%;
+}
+
+#attributions {
+    color: black;
+    text-decoration: none;
+    padding: 20px 20px 0px;
 }

@@ -1,7 +1,6 @@
 const bannerButton = document.querySelector('#bannerButton');
 const banner = document.querySelector('#banner');
 
-// banner.classList.toggle("close");
 var today = new Date();
 var dayOfWeek = today.getDay();
 
